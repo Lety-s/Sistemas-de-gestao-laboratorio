@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #101727;
+}
+
+.container{
+    height:100vh;
+    width:100vw;
+    
+    background-image: url('fundo-login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.box-login{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+
+    color:white;
+
+    width:400px;
+    height:520px;
+    background-color:#11192A;
+    border-radius: 40px;
+    border: 3px solid #1D2A40;
+    text-align: center;
+    gap: 12px;
+   
+}
+
+
+.box-login img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    border-radius:10px ;
+}
+
+.box-login h1 {
+    color: #F4F4F5;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.8px;
+}
+
+
+.box-login p {
+    color: #A7B4CA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 300px;
+}
+
+.box-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+}
+
+.box-dados hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #263449;
+    margin: 0 0 10px;
+}
+
+.box-dados h2 {
+    color: #F4F4F5;
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.box-dados .input-group {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    background-color: #1A273B;
+    border: 1px solid transparent;
+    border-radius: 16px;
+}
+
+.box-dados .input-group:focus-within {
+    border-color: #2563EB;
+}
+
+.box-dados .input-group input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: #F4F4F5;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+
+.box-dados .input-group input::placeholder {
+    color: #8390AB;
+}
+
+.box-dados .toggle-password {
+    background: transparent;
+    border: none;
+    color: #A7B4CA;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box-dados .btn-login {
+    width: 350px;
+    height: 50px;
+    margin-top: 8px;
+
+    background-color: #2563EB;
+    border: none;
+    border-radius: 16px;
+
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+     transition: transform 0.2s ease-in-out; 
+}
+
+.box-dados .btn-login:hover {
+    background-color:  #1c4db6;
+    transform: scale(1.05); }
+
+/* LINK DE CADASTRO */
+.box-dados .register-link {
+    color: #A7B4CA;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top:2px;
+    margin-left:15px;
+}
+
+.box-dados .register-link a {
+    color: #3B82F6;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.box-dados .register-link a:hover {
+    text-decoration: underline;
+}

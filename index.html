@@ -7,6 +7,141 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="container">
+
+        <div class="box-login" id="escondido">
+            <div>
+                <img src="icone.png" alt="icone de caixa">
+                <h1>MultiUsu</h1>
+                <p> descrição </p>
+            </div>
+            <div class="box-dados">
+                <hr>
+                <h2> Entrar na conta </h2>
+                <form class="login-form">
+                    <div class="input-group">
+                        
+
+                        <input
+                            type="text"
+                            name="usuario"
+                            placeholder="Usuário"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+
+                        <input
+                            type="password"
+                            name="senha"
+                            placeholder="Senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            aria-label="Mostrar senha"
+                        >
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </button>
+                    </div>
+
+                    <button type="submit" class="btn-login">
+                        Entrar
+                    </button>
+                </form>
+
+                <p class="register-link">
+                    Não tem uma conta?
+                    <a href="cadastro.html">Cadastre-se</a>
+                </p>
+            </div>
+        </div>
+
+
+       
+    <div class="box-cadastro" >
+        <div>
+            <img src="icone.png" alt="icone de caixa">
+            <h1>MultiUsu</h1>
+            <p>Descrição</p>
+        </div>
+
+        <form class="login-form">
+            <div class="box-dados">
+                <hr>
+                <h2>Cadastre-se</h2>
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        name="usuario"
+                        placeholder="Usuário"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="tipo-usuario" >
+                    <p>Selecione seu perfil:</p>
+
+                    <div class="opcoes-perfil">
+                        <label>
+                            <input
+                                type="radio"
+                                name="perfil"
+                                value="professor"
+                                required
+                            >
+                            <span>Professor</span>
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="perfil"
+                                value="aluno"
+                            >
+                            <span>Aluno</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="input-group">
+                <input
+                    type="password"
+                    name="senha"
+                    placeholder="Senha"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <button
+                    type="button"
+                    class="toggle-password"
+                    aria-label="Mostrar senha"
+                >
+                    <i class="fa-regular fa-eye-slash"></i>
+                </button>
+            </div>
+
+            <button type="submit" class="btn-login">
+                Cadastrar
+            </button>
+
+            <p class="register-link">
+                Já tem uma conta?
+                <a href="login.html">Logar</a>
+            </p>
+            </div>
+    </div>
+
+
+    </section>
 </body>
 </html>

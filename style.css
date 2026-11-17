@@ -8,6 +8,11 @@ body{
     background-color: #101727;
 }
 
+#escondido{
+    display: none;
+}
+
+
 .container{
     height:100vh;
     width:100vw;
@@ -26,7 +31,7 @@ body{
     flex-direction:row;
 }
 
-.box-login{
+.box-login, .box-cadastro{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -42,10 +47,15 @@ body{
     text-align: center;
     gap: 12px;
    
+   
 }
 
+ .box-cadastro {
+    width: 460px;
+    height: 620px;
+}
 
-.box-login img {
+.box-login img, .box-cadastro img {
     width: 75px;
     height: 75px;
     object-fit: contain;
@@ -53,7 +63,7 @@ body{
     border-radius:10px ;
 }
 
-.box-login h1 {
+.box-login h1, .box-cadastro img  {
     color: #F4F4F5;
     font-size: 32px;
     font-weight: 700;
@@ -62,7 +72,7 @@ body{
 }
 
 
-.box-login p {
+.box-login p, .box-cadastro p {
     color: #A7B4CA;
     font-size: 14px;
     font-weight: 400;
@@ -179,4 +189,47 @@ body{
 
 .box-dados .register-link a:hover {
     text-decoration: underline;
+}
+
+.tipo-usuario p {
+    color: #a8b8d0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left:20px;
+}
+
+.opcoes-perfil {
+    display: flex;
+    gap: 12px;
+}
+
+.opcoes-perfil label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px;
+
+    background: #1c2a40;
+    border: 1px solid #293a55;
+    border-radius: 14px;
+
+    color: #a8b8d0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opcoes-perfil input[type="radio"] {
+    accent-color: #2463eb;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.opcoes-perfil label:has(input:checked) {
+    background: #172f59;
+    border-color: #2463eb;
+    color: #ffffff;
 }

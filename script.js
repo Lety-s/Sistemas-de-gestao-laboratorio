@@ -1,45 +1,65 @@
 const baseURL = 'http://localhost:3000';
 
-const cadastroForm = document.querySelector(".cadastro-form");
-const inputNome = document.querySelector(".input_nome");
+// Seleciona as caixas (telas) de login e cadastro
+const boxLogin = document.querySelector(".box-login");
+const boxCadastro = document.querySelector(".box-cadastro");
 
-//Não funciona ainda:
+// Seleciona o formulário de cadastro e os campos
+const cadastroForm = document.querySelector("#cadastro-form");
+const inputNome = cadastroForm.querySelector(".input_nome");
+const inputSenha = cadastroForm.querySelector('input[name="senha"]');
+
 async function validarCadastro(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
-    const nome = titularInput.value.trim();
-    const funcao = funcao.value.trim
-    const senha = senhaCadastroInput.value.trim(); 
+    const usuario = inputNome.value.trim();
+    const senha = inputSenha.value.trim();
+    const perfilSelecionado = cadastroForm.querySelector('input[name="perfil"]:checked');
+    const funcao = perfilSelecionado ? perfilSelecionado.value : "";
 
-    if (nome === "" || funcao === "" || senha === "") {
-        alert("Por favor, preencha todos os campos do cadastro, incluindo a senha!");
-        return; 
+    if (usuario === "" || funcao === "" || senha === "") {
+        alert("Por favor, preencha todos os campos do cadastro!");
+        return;
     }
-  
+
     try {
-        
-        const response = await fetch(`${BASE_URL}/Conta`, {
+        // 1. Verifica se o usuário já existe
+        const buscaUsuario = await fetch(`${baseURL}/usuarios?usuario=${encodeURIComponent(usuario)}`);
+        const usuariosExistentes = await buscaUsuario.json();
+
+        if (usuariosExistentes.length > 0) {
+            alert("Esse nome de usuário já está cadastrado! Escolha outro.");
+            return;
+        }
+
+        // 2. Cadastra no db.json
+        const response = await fetch(`${baseURL}/usuarios`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                titular: nome, 
-                numero: numero, 
-                saldo: saldo, 
-                senha: senha, 
-                historico: []
+                usuario: usuario,
+                senha: senha,
+                funcao: funcao
             })
         });
 
         if (!response.ok) {
-            throw new Error("Erro ao cadastrar a conta no servidor.");
+            throw new Error("Erro ao cadastrar no servidor.");
         }
 
+        // 3. Tudo deu certo! Mostra o aviso, limpa o formulário e troca as telas:
         alert("Conta criada com sucesso! Agora faça o login.");
-        cadastroForm.reset(); 
+        cadastroForm.reset();
+
+        boxCadastro.classList.add("escondido"); // Esconde a tela de cadastro
+        boxLogin.classList.remove("escondido"); // Mostra a tela de login
 
     } catch (error) {
-        alert(error.message);
+        console.error(error);
+        alert("Erro: " + error.message);
     }
 }
+
+cadastroForm.addEventListener("submit", validarCadastro);

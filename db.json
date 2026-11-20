@@ -1,0 +1,23 @@
+{
+  "usuarios": [
+    {
+      "usuario": "ana",
+      "senha": "123",
+      "funcao": "professor",
+      "id": "rf5P49Uk_TE"
+    },
+    {
+      "usuario": "kayllan",
+      "senha": "1234",
+      "funcao": "cliente",
+      "id": "1Ro6mzi6wFQ"
+    },
+    {
+      "usuario": "bolinha",
+      "senha": "4050",
+      "funcao": "funcionario",
+      "id": "gGpPT2xU88o"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

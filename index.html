@@ -9,16 +9,16 @@
 <body>
     <section class="container">
 
-        <div class="box-login" id="escondido">
+        <div class="box-login escondido">
             <div>
                 <img src="icone.png" alt="icone de caixa">
-                <h1> Galeguinha marmitaria </h1>
+                <h1> Galeguinha Marmitaria </h1>
                 <p> descrição </p>
             </div>
             <div class="box-dados">
                 <hr>
                 <h2> Entrar na conta </h2>
-                <form class="login-form">
+                <form id="login-form">
                     <div class="input-group">
                         
 
@@ -67,11 +67,11 @@
     <div class="box-cadastro" >
         <div>
             <img src="icone.png" alt="icone de caixa">
-            <h1> Galeguinha marmitaria </h1>
+            <h1> Galeguinha Marmitaria </h1>
             <p> Sua comida quentinha toda hora </p>
         </div>
 
-        <form class="login-form">
+        <form id="cadastro-form">
             <div class="box-dados">
                 <hr>
                 <h2>Cadastre-se</h2>
@@ -94,7 +94,7 @@
                             <input
                                 type="radio"
                                 name="perfil"
-                                value="professor"
+                                value="cliente"
                                 required
                             >
                             <span> Cliente </span>
@@ -104,12 +104,11 @@
                             <input input_funcao
                                 type="radio"
                                 name="perfil"
-                                value="aluno"
+                                value="funcionario"
                             >
                             <span> Funcionário </span>
                         </label>
                     </div>
-                </form>
             </div>
 
             <div class="input-group">
@@ -122,7 +121,7 @@
                 >
 
                 <button
-                    type="button"
+                    type="submit"
                     class="toggle-password"
                     aria-label="Mostrar senha"
                 >
@@ -138,10 +137,13 @@
                 Já tem uma conta?
                 <a href="login.html">Logar</a>
             </p>
+           
             </div>
+            </form>
     </div>
 
 
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

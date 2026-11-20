@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #101727;
+    background-color: #442202;
 }
 
 #escondido{
@@ -17,7 +17,7 @@ body{
     height:100vh;
     width:100vw;
     
-    background-image: url('fundo-login.png');
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,9 +41,9 @@ body{
 
     width:400px;
     height:520px;
-    background-color:#11192A;
+    background-color: #351604;
     border-radius: 40px;
-    border: 3px solid #1D2A40;
+    border: 3px solid #1e1003;
     text-align: center;
     gap: 12px;
    
@@ -56,8 +56,8 @@ body{
 }
 
 .box-login img, .box-cadastro img {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     object-fit: contain;
     margin-bottom: 8px;
     border-radius:10px ;
@@ -73,12 +73,13 @@ body{
 
 
 .box-login p, .box-cadastro p {
-    color: #A7B4CA;
+    color: #FFF1DF;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
     max-width: 300px;
+    margin-left:10px;
 }
 
 .box-dados {
@@ -91,7 +92,7 @@ body{
 .box-dados hr {
     width: 100%;
     border: none;
-    border-top: 1px solid #263449;
+    border-top: 1px solid #1e1003;
     margin: 0 0 10px;
 }
 
@@ -111,13 +112,13 @@ body{
     padding: 0 20px;
     box-sizing: border-box;
 
-    background-color: #1A273B;
+    background-color:#FFF1DF;
     border: 1px solid transparent;
     border-radius: 16px;
 }
 
 .box-dados .input-group:focus-within {
-    border-color: #2563EB;
+    border-color: #1e1003;
 }
 
 .box-dados .input-group input {
@@ -130,20 +131,20 @@ body{
     border: none;
     outline: none;
 
-    color: #F4F4F5;
+    color:   #1e1003;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
 
 .box-dados .input-group input::placeholder {
-    color: #8390AB;
+    color: #94765C;
 }
 
 .box-dados .toggle-password {
     background: transparent;
     border: none;
-    color: #A7B4CA;
+    color: white;
     font-size: 20px;
     cursor: pointer;
 }
@@ -153,11 +154,11 @@ body{
     height: 50px;
     margin-top: 8px;
 
-    background-color: #2563EB;
+    background-color: #F58216;
     border: none;
     border-radius: 16px;
 
-    color: #FFFFFF;
+    color:#351604;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -167,12 +168,12 @@ body{
 }
 
 .box-dados .btn-login:hover {
-    background-color:  #1c4db6;
+    background-color: #FF9D32;
     transform: scale(1.05); }
 
 /* LINK DE CADASTRO */
 .box-dados .register-link {
-    color: #A7B4CA;
+    color: white;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -181,7 +182,7 @@ body{
 }
 
 .box-dados .register-link a {
-    color: #3B82F6;
+    color:#F58216;
     font-weight: 700;
     text-decoration: none;
     
@@ -192,7 +193,7 @@ body{
 }
 
 .tipo-usuario p {
-    color: #a8b8d0;
+    color: #FFF1DF;
     font-size: 16px;
     margin-bottom: 10px;
     margin-left:20px;
@@ -212,24 +213,24 @@ body{
 
     padding: 15px;
 
-    background: #1c2a40;
-    border: 1px solid #293a55;
+    background:  #351604;
+    border: 2px solid  #1e1003;
     border-radius: 14px;
 
-    color: #a8b8d0;
+    color: white;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .opcoes-perfil input[type="radio"] {
-    accent-color: #2463eb;
+    accent-color:  #351604;
     width: 17px;
     height: 17px;
     cursor: pointer;
 }
 
 .opcoes-perfil label:has(input:checked) {
-    background: #172f59;
-    border-color: #2463eb;
+    background:#F58216;
+    border-color:#FFB21A;
     color: #ffffff;
 }

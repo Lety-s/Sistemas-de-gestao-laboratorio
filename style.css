@@ -234,3 +234,46 @@ body{
     border-color:#FFB21A;
     color: #ffffff;
 }
+
+.box-principal{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    color:white;
+    background-image: url(fundo-principal.png);
+
+}
+
+.cabecalho{
+    background-image: url(fundo-principal.png);
+    width:100vw;
+    height:100px;
+    display:flex;
+    flex-direction: row;
+    color:rgb(255, 255, 255);
+}
+
+.cabecalho img{
+    width:100px;
+    height:100px;
+    margin-left:20px;
+
+}
+
+.cabecalho hr{
+    width: 100vw;
+    border: none;
+    border-top: 3px solid #F58216;
+    margin-top:50px;
+}
+.menu{
+    width:400px;
+    height:500px;
+    margin-left: 40px;
+    margin-top:40px;
+    background-color: #351604;
+    border-radius: 40px;
+    border: 3px solid   #F58216;
+}

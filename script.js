@@ -63,3 +63,45 @@ async function validarCadastro(event) {
 }
 
 cadastroForm.addEventListener("submit", validarCadastro);
+
+const loginForm = document.querySelector("#login-form");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const inputUsuario = loginForm.querySelector("input[name='usuario']");
+        const inputSenha = loginForm.querySelector("input[name='senha']");
+
+        const usuarioDigitado = inputUsuario ? inputUsuario.value.trim() : "";
+        const senhaDigitada = inputSenha ? inputSenha.value.trim() : "";
+
+        if (!usuarioDigitado || !senhaDigitada) {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        try {
+            // Busca todos os usuários cadastrados no JSON Server
+            const resposta = await fetch("http://localhost:3000/usuarios");
+            const usuarios = await resposta.json();
+
+            // Procura se existe algum usuário com o mesmo nome e senha
+            const usuarioEncontrado = usuarios.find(
+                (u) => u.usuario === usuarioDigitado && u.senha === senhaDigitada
+            );
+
+            if (usuarioEncontrado) {
+                alert(`Bem-vindo de volta, ${usuarioEncontrado.usuario}! (${usuarioEncontrado.funcao})`);
+                
+                // Aqui você pode redirecionar para a página principal do sistema
+                // window.location.href = "painel.html"; 
+            } else {
+                alert("Usuário ou senha incorretos!");
+            }
+        } catch (erro) {
+            console.error("Erro ao tentar fazer login:", erro);
+            alert("Não foi possível conectar ao servidor.");
+        }
+    });
+}

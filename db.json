@@ -23,6 +23,18 @@
       "senha": "3030",
       "funcao": "funcionario",
       "id": "PcBFF_H1SpE"
+    },
+    {
+      "usuario": "José",
+      "senha": "4-60",
+      "funcao": "cliente",
+      "id": "i-qMjPfmbDY"
+    },
+    {
+      "usuario": "jurema",
+      "senha": "50",
+      "funcao": "cliente",
+      "id": "6zb4-cBl5Wk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

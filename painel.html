@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-principal">
+
+        <header class="cabecalho">
+           
+            <div class="conteudo-cabecalho">
+                 <img src="icone.png" alt="icone">
+                 <div>
+                    <h1> Galeguinha Marmitaria </h1>
+                    <p> Comida quentinha toda hora </p>
+                 </div>
+                 
+            </div>
+           
+           <div class="menu">
+                <button class="btn-menu" data-alvo="aba-inicio"> INÍCIO </button>
+                <button class="btn-menu" data-alvo="aba-pedidos"> PEDIDOS </button>
+                <button class="btn-menu" data-alvo="aba-sobre"> SOBRE NÓS </button>
+                <button class="btn-menu" data-alvo="aba-indicadores"> INDICADORES </button>
+                <button type="button" id="btn-sair"> SAIR </button>
+            </div>
+        </header>
+        <hr>
+
+        <section class="conteudo">
+            <!-- Aba 1: Começa visível (sem a classe escondido) -->
+            <div id="aba-inicio" class="conteudo-sessão">
+                <h2>Início</h2>
+                <p>Bem-vindo ao painel da Galeguinha Marmitaria!</p>
+            </div>
+
+            <!-- Aba 2: Começa escondida -->
+            <div id="aba-pedidos" class="conteudo-sessão escondido">
+                <h2>Pedidos</h2>
+                <p>Aqui vai aparecer a lista de pedidos.</p>
+            </div>
+
+            <!-- Aba 3: Começa escondida -->
+            <div id="aba-sobre" class="conteudo-sessão escondido">
+                <h2>Sobre Nós</h2>
+                <p>História da Galeguinha Marmitaria.</p>
+            </div>
+
+            <!-- Aba 4: Começa escondida -->
+            <div id="aba-indicadores" class="conteudo-sessão escondido">
+                <h2>Indicadores</h2>
+                <p>Gráficos e relatórios da marmitaria.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Lembre-se de conferir o nome do seu arquivo JS aqui -->
+    <script src="painel.js"></script>
+</body>
+</html>

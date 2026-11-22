@@ -93,7 +93,7 @@ if (loginForm) {
 
             if (usuarioEncontrado) {
                 alert(`Bem-vindo de volta, ${usuarioEncontrado.usuario}! (${usuarioEncontrado.funcao})`);
-                
+                window.location.href = "painel.html";
                 // Aqui você pode redirecionar para a página principal do sistema
                 // window.location.href = "painel.html"; 
             } else {

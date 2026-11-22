@@ -249,16 +249,17 @@ body{
 .cabecalho{
     background-image: url(fundo-principal.png);
     width:100vw;
-    height:100px;
+    height:80px;
     display:flex;
     flex-direction: row;
     color:rgb(255, 255, 255);
+    gap:30%;
 }
 
 .cabecalho img{
-    width:100px;
-    height:100px;
-    margin-left:20px;
+    width:80px;
+    height:80px;
+    margin-left:40px;
 
 }
 
@@ -268,12 +269,48 @@ body{
     border-top: 3px solid #F58216;
     margin-top:50px;
 }
+
+.conteudo-cabecalho{
+  
+    display:flex;
+    margin-left:20px;
+    gap:15px;
+    flex-direction: row;
+}
+
+.conteudo-cabecalho p{
+   font-size:15px;
+   color:#FFF1DF;
+   margin-top:5px;
+   margin-left:20px;
+}
+.conteudo-cabecalho h1{
+    font-size:25px;
+    margin-top:10px;
+}
+
 .menu{
-    width:400px;
-    height:500px;
-    margin-left: 40px;
-    margin-top:40px;
-    background-color: #351604;
-    border-radius: 40px;
-    border: 3px solid   #F58216;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.menu button{
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 18px; 
+  font-weight: 600;
+}
+.menu button:hover {
+  color: #F58216; /* Nova cor do texto */
+  transform: scale(1.10);
 }

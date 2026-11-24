@@ -6,7 +6,7 @@
     <title>Document</title>
     <!--simbolos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">\n    <link rel="stylesheet" href="pedidos.css">
 </head>
 <body>
     <div class="box-principal">
@@ -41,8 +41,48 @@
 
             <!-- Aba 2: Começa escondida -->
             <div id="aba-pedidos" class="conteudo-sessão escondido">
-                <h2>Pedidos</h2>
-                <p>Aqui vai aparecer a lista de pedidos.</p>
+                <div class="pedidos-app">
+                    <header class="pedidos-topo">
+                        <div>
+                            <span class="pedidos-sobretitulo">GALEGUINHA MARMITARIA</span>
+                            <h2>Monte seu pedido</h2>
+                            <p>Comida caseira, saborosa e feita com carinho.</p>
+                        </div>
+                        <div class="pedidos-topo-icone" aria-hidden="true"><i class="fa-solid fa-utensils"></i></div>
+                    </header>
+
+                    <div class="pedidos-layout">
+                        <section class="pedidos-catalogo" aria-label="Cardápio de marmitas">
+                            <div class="pedidos-secao-titulo">
+                                <div>
+                                    <h3>Nosso cardápio</h3>
+                                    <p>Escolha suas marmitas e adicione ao pedido.</p>
+                                </div>
+                                <span id="pedidos-qtd-produtos" class="pedidos-contador">5 opções</span>
+                            </div>
+                            <div id="pedidos-lista-produtos" class="pedidos-grid"></div>
+                        </section>
+
+                        <aside class="pedidos-carrinho" aria-label="Resumo do pedido">
+                            <div class="pedidos-carrinho-titulo">
+                                <h3><i class="fa-solid fa-cart-shopping"></i> Seu pedido</h3>
+                                <span id="pedidos-carrinho-contador">0</span>
+                            </div>
+                            <div id="pedidos-itens-carrinho" class="pedidos-itens-carrinho">
+                                <p class="pedidos-vazio">Seu carrinho está vazio.</p>
+                            </div>
+                            <div class="pedidos-total-linha">
+                                <span>Total</span>
+                                <strong id="pedidos-total">R$ 0,00</strong>
+                            </div>
+                            <button type="button" id="pedidos-finalizar" class="pedidos-btn-finalizar" disabled>
+                                Finalizar pedido <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            <p class="pedidos-aviso">O estoque é atualizado ao confirmar o pedido neste navegador.</p>
+                        </aside>
+                    </div>
+                    <div id="pedidos-mensagem" class="pedidos-mensagem" role="status" aria-live="polite"></div>
+                </div>
             </div>
 
             <!-- Aba 3: Começa escondida -->
@@ -159,6 +199,6 @@
     </div>
 
 
-    <script src="painel.js"></script>
+    <script src="painel.js"></script>\n    <script src="pedidos.js"></script>
 </body>
 </html>

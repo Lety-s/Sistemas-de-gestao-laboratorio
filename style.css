@@ -11,7 +11,9 @@ body{
 .escondido{
     display: none !important;
 }
-
+.input-group {
+  margin-bottom: 15px; /* Cria um espaço de 15px abaixo de cada campo */
+}
 
 .container{
     height:100vh;
@@ -81,7 +83,7 @@ body{
     line-height: 1.6;
     margin: 0;
     max-width: 300px;
-    margin-left:10px;
+    margin-left:18px;
 }
 
 .box-dados {
@@ -1078,3 +1080,13 @@ body{
     }
 
 }
+
+
+.menu button:hover {
+  color: #F58216;
+  transform: scale(1.1);
+  text-decoration: underline; /* Adiciona o sublinhado laranja */
+  text-underline-offset: 4px;
+  
+}
+

@@ -83,3 +83,33 @@ body{margin:0;font-family:'Roboto',Arial,sans-serif;background:var(--fundo);colo
 #aba-sobre{
   background-color: #FFF1DF;
 }
+
+/* Corrige os textos da seção de destaque */
+#aba-sobre .destaque h3,
+#aba-sobre .destaque p {
+  color: #6b2a0e;
+}
+
+/* Corrige a data e os parágrafos dentro dos 3 cards */
+#aba-sobre .cartao .data,
+#aba-sobre .cartao p {
+  color: #6b2a0e;
+}
+
+.rodape .redes {
+  margin-top: 16px;    /* Espaço acima dos ícones */
+  margin-bottom: 16px; /* Espaço abaixo dos ícones */
+}
+
+/* Diminui o texto dentro dos cards */
+#aba-sobre .cartao p {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  line-height: 1.45 !important;
+}
+
+/* Mantém apenas a data ("08 de maio de 2024") um pouco maior e em negrito */
+#aba-sobre .cartao .data {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+}

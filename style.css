@@ -317,9 +317,7 @@ body{
   transform: scale(1.10);
 }
 
-/* =========================================================
-   INDICADORES (PALETA ORIGINAL GALEGUINHA MARMITARIA)
-   ========================================================= */
+/* imdicador */
 .dashboard-container {
     --bg-card: rgba(53, 22, 4, 0.80);
     --bg-card-hover: rgba(68, 34, 2, 0.92);

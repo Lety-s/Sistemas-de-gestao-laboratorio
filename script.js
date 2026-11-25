@@ -105,3 +105,24 @@ if (loginForm) {
         }
     });
 }
+
+const linkCadastro = document.querySelector("#link-cadastro");
+const linkLogin = document.querySelector("#link-login");
+
+// Quando clicar em "Cadastre-se"
+if (linkCadastro) {
+    linkCadastro.addEventListener("click", (event) => {
+
+        boxLogin.classList.add("escondido");
+        boxCadastro.classList.remove("escondido");
+    });
+}
+
+// Quando clicar em "Fazer Login" (para voltar)
+if (linkLogin) {
+    linkLogin.addEventListener("click", (event) => {
+      
+        boxCadastro.classList.add("escondido");
+        boxLogin.classList.remove("escondido");
+    });
+}

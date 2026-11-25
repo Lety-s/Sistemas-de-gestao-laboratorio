@@ -1,6 +1,6 @@
 :root{
   --marrom:#4a1a08; --marrom-2:#6b2a0e; --laranja:#f57c00; --laranja-2:#ff9800;
-  --fundo:#fff0dc; --texto:#3a1706; --cartao:rgba(255,255,255,.55);
+  --fundo:#fff0dc; --texto:#3a1706; --cartao:white;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
 html{scroll-padding-top:env(safe-area-inset-top,0px)}

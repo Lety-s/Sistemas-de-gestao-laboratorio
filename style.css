@@ -71,7 +71,9 @@ body{
     letter-spacing: -0.8px;
 }
 
-
+.box-login input{
+    margin-top:10px;
+}
 .box-login p, .box-cadastro p {
     color: #FFF1DF;
     font-size: 14px;
@@ -94,6 +96,7 @@ body{
     border: none;
     border-top: 1px solid #1e1003;
     margin: 0 0 10px;
+    
 }
 
 .box-dados h2 {
@@ -115,6 +118,7 @@ body{
     background-color:#FFF1DF;
     border: 1px solid transparent;
     border-radius: 16px;
+   
 }
 
 .box-dados .input-group:focus-within {
@@ -754,7 +758,7 @@ body{
     margin: -5px auto 0;
     width: 92%;
     min-height: 110px;
-    background: #ffe5c1;
+    background: white;
     border-radius: 35px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

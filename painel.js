@@ -212,3 +212,63 @@ if (btnSair) {
         window.location.href = "index.html";
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Seleciona todas as abas do painel
+    const abas = document.querySelectorAll(".conteudo-sessão");
+
+    // Seleciona todos os botões de navegação
+    const botoes = document.querySelectorAll("[data-alvo]");
+
+    // Função para trocar de aba
+    function abrirAba(idAba) {
+
+        const abaSelecionada = document.getElementById(idAba);
+
+        // Verifica se a aba existe
+        if (!abaSelecionada) {
+            console.error("Aba não encontrada:", idAba);
+            return;
+        }
+
+        // Esconde todas as abas
+        abas.forEach(aba => {
+            aba.classList.add("escondido");
+        });
+
+        // Mostra a aba selecionada
+        abaSelecionada.classList.remove("escondido");
+
+        // Atualiza o botão ativo do menu
+        document.querySelectorAll(".btn-menu").forEach(botao => {
+            botao.classList.toggle(
+                "ativo",
+                botao.dataset.alvo === idAba
+            );
+        });
+
+        // Volta a página para o topo
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Adiciona funcionamento aos botões
+    botoes.forEach(botao => {
+
+        botao.addEventListener("click", () => {
+
+            const destino = botao.dataset.alvo;
+
+            abrirAba(destino);
+
+        });
+
+    });
+
+    // Abre a página inicial ao carregar
+    abrirAba("aba-inicio");
+
+});

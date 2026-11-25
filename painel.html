@@ -37,8 +37,91 @@
         <section class="conteudo">
             <!-- Aba 1: Começa visível (sem a classe escondido) -->
             <div id="aba-inicio" class="conteudo-sessão">
-                <h2>Início</h2>
-                <p>Bem-vindo ao painel da Galeguinha Marmitaria!</p>
+                 <main class="home-container">
+
+                    <section class="home-hero">
+                        <div class="hero-texto">
+                            <span class="hero-subtitulo">Galeguinha Marmitaria</span>
+                            <h2>Comida caseira,<br><span>sempre com amor!</span></h2>
+                            <p>Sabor, qualidade e muito carinho em cada refeição.</p>
+                            <div class="hero-botoes">
+                                <button class="btn-hero-principal" data-alvo="aba-pedidos"><i class="fa-solid fa-utensils"></i> Fazer meu pedido</button>
+                                <button class="btn-hero-secundario" data-alvo="aba-sobre"><i class="fa-solid fa-circle-info"></i> Conheça nossa história</button>
+                            </div>
+                        </div>
+                        <div class="hero-imagem">
+                            <img src="foto.jpg" alt="Refeição caseira">
+                        </div>
+                        <span class="hero-frase">Porque você<br>merece o melhor!</span>
+                    </section>
+
+                    <section class="home-diferenciais">
+                        <article class="diferencial">
+                            <i class="fa-solid fa-house"></i>
+                            <div><h4>Sabor de Casa</h4><p>Receitas feitas com muito carinho</p></div>
+                        </article>
+                        <article class="diferencial">
+                            <i class="fa-solid fa-clock"></i>
+                            <div><h4>Pontualidade</h4><p>Sua refeição na hora certa</p></div>
+                        </article>
+                        <article class="diferencial">
+                            <i class="fa-solid fa-star"></i>
+                            <div><h4>Preço Justo</h4><p>Qualidade com valor acessível</p></div>
+                        </article>
+                        <article class="diferencial">
+                            <i class="fa-solid fa-heart"></i>
+                            <div><h4>Atendimento Especial</h4><p>Sempre perto de você</p></div>
+                        </article>
+                    </section>
+
+                    <section class="home-sobre">
+                        <div class="home-sobre-texto">
+                            <span class="home-legenda">Por que escolher a Galeguinha Marmitaria?</span>
+                            <h2>Mais que uma marmitaria, uma família cuidando de você!</h2>
+                            <p>Aqui, cada refeição é preparada com ingredientes selecionados, muito amor e o compromisso de entregar o melhor para você.</p>
+                            <button class="btn-sobre" data-alvo="aba-sobre">Saiba mais sobre nós <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <div class="home-sobre-imagem">
+                            <img src="image.png" alt="Preparação de comida caseira">
+                        </div>
+
+                        <div class="home-depoimentos">
+                            <div class="depoimento-titulo">
+                                <i class="fa-solid fa-heart"></i>
+                                <h3>Depoimentos de Clientes</h3>
+                            </div>
+                            <div class="depoimento-conteudo">
+                                <p>"A comida é deliciosa, chega sempre no horário e o atendimento é incrível! Recomendo de olhos fechados!"</p>
+                                <div class="depoimento-cliente">
+                                    <div class="cliente-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <div>
+                                        <h4>Maria Silva</h4>
+                                        <div class="estrelas">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="home-chamada">
+                        <div class="chamada-icone"><i class="fa-solid fa-kitchen-set"></i></div>
+                        <div class="chamada-texto">
+                            <h2>Faça já seu pedido!</h2>
+                            <p>Receba uma refeição deliciosa, feita com amor.</p>
+                        </div>
+                        <div class="chamada-botao">
+                            <button data-alvo="aba-pedidos"><i class="fa-solid fa-utensils"></i> Fazer meu pedido <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </section>
+
+                </main>
             </div>
 
             <!-- Aba 2: Começa escondida -->
